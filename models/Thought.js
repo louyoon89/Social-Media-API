@@ -3,33 +3,34 @@ const reactionSchema = require("./Reaction");
 const dateFormat = require("../utils/date");
 
 const thoughtSchema = new Schema(
-    {
-        thoughtText: {
-            type: String,
-            required: "Please let us know what you think",
-            minlength: 1,
-            maxlength: 280
-        },
-        createdAt: {
-            type: Date,
-        },
-        username: {
-            type: String,
-            required: true,
-        },
-        reactions: ,
+  {
+    thoughtText: {
+      type: String,
+      required: "You need to leave a thought!",
+      minlength: 1,
+      maxlength: 280,
     },
-    {
-        toJSON: {
-            virtuals: true,
-            getters: true,
-        },
-        id: false,
-    }
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: (timestamp) => dateFormat(timestamp),
+    },
+    username: {
+      type: String,
+      required: true,
+    },
+    reactions: [reactionSchema],
+  },
+  {
+    toJSON: {
+      getters: true,
+    },
+    id: false,
+  }
 );
 
 thoughtSchema.virtual("reactionCount").get(function () {
-    return this.reactions.length;
+  return this.reactions.length;
 });
 
 const Thought = model("Thought", thoughtSchema);
