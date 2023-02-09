@@ -12,17 +12,17 @@ const userSchema = new Schema(
             type: String,
             required: true,
             unique: true,
-            match: ,
+            match: [/.+@.+\..+/, "E-mail Address must match"],
         },
         thoughts: [
             {
-                type: ,
-                ref: ,
+                type: Schema.Types.ObjectId,
+                ref: "Thought",
             }
         ],
         friends: [
             {
-                type: ,
+                type: Schema.Types.ObjectId,
                 ref: "User",
             },
         ],
@@ -33,7 +33,8 @@ const userSchema = new Schema(
         },
         id: false,
     }
-
 );
+
+const User = model("User", userSchema);
 
 module.exports = User;
