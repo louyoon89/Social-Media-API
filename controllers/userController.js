@@ -1,7 +1,7 @@
 const { User } = require("../models");
 
 const userController = {
-  // Get for a User
+  // User : findOne
   getUser(req, res) {
     User.findOne({ _id: req.params.userId })
       .select("-__v")
@@ -21,7 +21,7 @@ const userController = {
       });
   },
 
-  // Get for ALL Users
+  // User : Get ALL
   getAllUsers(req, res) {
     User.find()
       .select("-__v")
@@ -34,7 +34,7 @@ const userController = {
       });
   },
 
-  // Create a NEW user
+  //  User : Create
   createUser(req, res) {
     User.create(req.body)
       .then((dbUserData) => {
@@ -108,7 +108,6 @@ const userController = {
       });
   },
 
-  // BONUS
   // Delete user
   // BONUS
   // Delete user thoughts (by ID)
