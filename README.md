@@ -17,6 +17,10 @@ Backend project for API for social media application. Users are created to add f
 
 # Demo & Screenshots
 
+
+https://user-images.githubusercontent.com/113860554/218561759-9ca6a61e-57bb-4c53-bfc3-7727db00619d.mp4
+
+
 Insomnia
 ![Screenshot](./assets/insomnia.png)
 MongoDB
