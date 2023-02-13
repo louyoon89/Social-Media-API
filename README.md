@@ -7,7 +7,6 @@ This project is an API for a social network web application where users can shar
 # Table of Contents
 
 - [License](#license)
-- [Badges](#badges)
 - [Demo & Screenshots](#screenshots)
 - [Installation and Usage](#installation-and-usage)
 - [Usage](#Usage)
