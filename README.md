@@ -1,20 +1,21 @@
-#Social-Media-API
+# Social Media API
+Unit 18 NoSQL Challenge
+
+Backend project for API for social media application. Users are created to add friends and share thoughts/reactions.
+
 
 # Table of Contents
 
 - [License](#license)
+- [Badges](#badges)
 - [Demo & Screenshots](#screenshots)
 - [Installation and Usage](#installation-and-usage)
 - [Usage](#Usage)
-- [Technologies](#technologies)
+- [Technologies Used](#technologies-used)
 - [Project Link](#project-link)
+- [Contributing and Questions](#contributing-and-questions)
 
 # Demo & Screenshots
-Demo:
-
-
-https://user-images.githubusercontent.com/113860554/218560268-759f16b1-19d7-46e0-872a-bd0449b0f591.mp4
-
 
 Insomnia
 ![Screenshot](./assets/insomnia.png)
@@ -61,14 +62,14 @@ Using Insomia we will be testing API routes to create, add, update, and remove u
     - Create a reaction
     - Delete a reaction by the reactionId
 
-# Technologies
+# Technologies Used
 - Express
-- Insomnia
+- Insomniagi
 - Javascript
 - MongoDB
 - Mongoose
 - Node.js
 
 # Project Link
-Github: https://github.com/louyoon89/Social-Media-API <br>
+Github: 
 Live Video: https://drive.google.com/file/d/1ErFeE_6A7ED3eT9_4r8WzSuTG_ETEePg/view?usp=share_link
