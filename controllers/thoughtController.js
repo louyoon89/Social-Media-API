@@ -6,7 +6,7 @@ const thoughtController = {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "No thought with this id" });
         }
         res.json(dbThoughtData);
       })
@@ -60,7 +60,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "No thought with this id" });
         }
         res.json(dbThoughtData);
       })
@@ -77,7 +77,7 @@ const thoughtController = {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "No thought with this id" });
         }
         // Remove thought id
         return User.findOneAndUpdate(
@@ -90,7 +90,7 @@ const thoughtController = {
         if (!dbUserData) {
           return res
             .status(404)
-            .json({ message: "Thought created but no user with this id!" });
+            .json({ message: "Thought with no user id deleted" });
         }
         res.json({ message: "Thought sucessfully deleted!" });
       })
@@ -109,7 +109,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "No thought with this id" });
         }
         res.json(dbThoughtData);
       })
@@ -128,7 +128,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "reaction removed" });
         }
         res.json(dbThoughtData);
       })
