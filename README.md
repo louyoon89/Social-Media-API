@@ -6,14 +6,12 @@ Backend project for API for social media application. Users are created to add f
 
 # Table of Contents
 
-- [License](#license)
-- [Badges](#badges)
 - [Demo & Screenshots](#screenshots)
 - [Installation and Usage](#installation-and-usage)
 - [Usage](#Usage)
 - [Technologies Used](#technologies-used)
 - [Project Link](#project-link)
-- [Contributing and Questions](#contributing-and-questions)
+
 
 # Demo & Screenshots
 
@@ -68,7 +66,7 @@ Using Insomia we will be testing API routes to create, add, update, and remove u
 
 # Technologies Used
 - Express
-- Insomniagi
+- Insomnia
 - Javascript
 - MongoDB
 - Mongoose
