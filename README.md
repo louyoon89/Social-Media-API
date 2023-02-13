@@ -75,5 +75,5 @@ Using Insomia we will be testing API routes to create, add, update, and remove u
 - Node.js
 
 # Project Link
-Github: 
+Github:  https://github.com/louyoon89/Social-Media-API
 Live Video: https://drive.google.com/file/d/1ErFeE_6A7ED3eT9_4r8WzSuTG_ETEePg/view?usp=share_link
