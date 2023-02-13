@@ -11,11 +11,15 @@ This project is an API for a social network web application where users can shar
 - [Demo & Screenshots](#screenshots)
 - [Installation and Usage](#installation-and-usage)
 - [Usage](#Usage)
-- [Technologies Used](#technologies-used)
+- [Technologies](#technologies)
 - [Project Link](#project-link)
-- [Contributing and Questions](#contributing-and-questions)
 
 # Demo & Screenshots
+Demo:
+
+
+https://user-images.githubusercontent.com/113860554/218560268-759f16b1-19d7-46e0-872a-bd0449b0f591.mp4
+
 
 Insomnia
 ![Screenshot](./assets/insomnia.png)
@@ -62,7 +66,7 @@ Using Insomia we will be testing API routes to create, add, update, and remove u
     - Create a reaction
     - Delete a reaction by the reactionId
 
-# Technologies Used
+# Technologies
 - Express
 - Insomnia
 - Javascript
